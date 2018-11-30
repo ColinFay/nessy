@@ -1,0 +1,78 @@
+body {
+  padding: 0 2rem;
+  margin: 2rem;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+i.brand {
+  margin-right: 1rem;
+}
+
+div.containers > .container {
+  display: inline-block;
+  max-width: 400px;
+}
+
+.balloon.container .balloon {
+  max-width: 600px;
+  margin: 2rem 2rem;
+}
+
+.balloon.container .messages {
+  display: flex;
+  flex-direction: column;
+}
+.balloon.container .message {
+  display: flex;
+}
+.balloon.container .message i {
+  align-self: flex-end;
+}
+.balloon.container .message.-left {
+  align-self: flex-start;
+}
+.balloon.container .message.-right {
+  align-self: flex-end;
+}
+
+.form.container > .field:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  text-align: center;
+}
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.github-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  display: flex;
+  height: 100px;
+  color: #333;
+  text-decoration: none;
+}
+.github-link:hover {
+  text-decoration: none;
+}
+.github-link > p.balloon {
+  align-self: flex-start;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: #333;
+}
+.github-link > i.octocat {
+  align-self: flex-end;
+}
