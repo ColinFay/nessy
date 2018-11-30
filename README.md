@@ -64,9 +64,11 @@ shinyApp(ui, server)
   
 ```
 
+![](readme-figs/container.png)
+
 ### UI Elements
 
-There are five different buttons & a `radio_button()`:
+There are five different buttons & a `radio_buttons()`:
 
 ``` r
 ui <- cartridge(
@@ -78,7 +80,7 @@ ui <- cartridge(
     button_success("Success", "Success"),
     button_warning("Warning", "Warning"),
     button_error("Error", "Error"),
-    radio_button("sure", "Are you sure?", c("yes", "no"))
+    radio_buttons("sure", "Are you sure?", c("yes", "no"))
   )
 )
 
@@ -88,6 +90,8 @@ server <- function(input, output, session) {
 
 shinyApp(ui, server)
 ```
+
+![](readme-figs/buttons.png)
 
 You can also find:
 
@@ -111,6 +115,12 @@ You can then:
 shiny::runApp(nessy_examples("exampleapp.R"))
 ```
 
-Please note that the \[34m’nessy’\[39m project is released with a
-[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
-this project, you agree to abide by its terms.
+![](readme-figs/full1.png)
+
+![](readme-figs/full2.png)
+
+![](readme-figs/full3.png)
+
+Please note that the ‘nessy’ project is released with a [Contributor
+Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
+you agree to abide by its terms.

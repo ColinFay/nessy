@@ -72,7 +72,6 @@ button_error <- function(id, ...){
 #' @return a tagList
 #' @export
 #'
-#'
 #' @importFrom shiny radioButtons
 
 radio_buttons <- function(id, label, choices = NULL,
