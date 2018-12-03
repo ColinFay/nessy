@@ -1,26 +1,25 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# nessy
+nessy
+=====
 
 A NES css for Shiny.
 
-Note: I do not coded the CSS, but brought an existing one to Shiny. Give
-the [original css](https://github.com/BcRikko/NES.css) a star if you
-like it\!
+Note: I do not coded the CSS, but brought an existing one to Shiny. Give the [original css](https://github.com/BcRikko/NES.css) a star if you like it!
 
-## Install
+Install
+-------
 
 ``` r
 remotes::install_github("ColinFay/nessy")
 ```
 
-## Init
+Init
+----
 
 ### Starting point
 
-Every new page is launched by the `cartridge()` function. It’s more or
-less equivalent to `shiny::fluidPage()`, but with NES CSS loaded.
+Every new page is launched by the `cartridge()` function. It's more or less equivalent to `shiny::fluidPage()`, but with NES CSS loaded.
 
 ``` r
 library(nessy)
@@ -35,15 +34,13 @@ server <- function(input, output, session) {
   
 }
 
-shinyApp(ui, server)
+shiny::shinyApp(ui, server)
   
 ```
 
 ### New container
 
-You can simply pass along a `tagList()` of objects. The framed areas are
-launched by the `container`, `container_simple` and
-`container_with_title` functions.
+You can simply pass along a `tagList()` of objects. The framed areas are launched by the `container`, `container_simple` and `container_with_title` functions.
 
 ``` r
 library(nessy)
@@ -60,7 +57,7 @@ server <- function(input, output, session) {
   
 }
 
-shinyApp(ui, server)
+shiny::shinyApp(ui, server)
   
 ```
 
@@ -88,19 +85,20 @@ server <- function(input, output, session) {
   
 }
 
-shinyApp(ui, server)
+shiny::shinyApp(ui, server)
 ```
 
 ![](readme-figs/buttons.png)
 
 You can also find:
 
-  - Balloons
-  - Checkbox
-  - Text Input
-  - Various Icons
+-   Balloons
+-   Checkbox
+-   Text Input
+-   Various Icons
 
-## Example
+Example
+-------
 
 `nessy_examples()` returns the path to all available examples.
 
@@ -121,6 +119,4 @@ shiny::runApp(nessy_examples("exampleapp.R"))
 
 ![](readme-figs/full3.png)
 
-Please note that the ‘nessy’ project is released with a [Contributor
-Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
-you agree to abide by its terms.
+Please note that the 'nessy' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
