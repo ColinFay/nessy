@@ -18,11 +18,12 @@ knitr::opts_chunk$set(
 
 A NES css for Shiny. 
 
-Note: I do not coded the CSS, but brought an existing one to Shiny. Give the [original css](https://github.com/BcRikko/NES.css) a star if you like it!
+Note: I did not code the CSS, but brought an existing one to Shiny. Give the [original css](https://github.com/BcRikko/NES.css) a star if you like it!
 
 ## Install 
 
 ```{r}
+#install.packages("remotes")
 remotes::install_github("ColinFay/nessy")
 ```
 
