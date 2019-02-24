@@ -1,7 +1,10 @@
 Package: nessy
 Title: A 'NES' css for 'Shiny'
 Version: 0.0.0.9001
-Authors@R: person('Colin', 'Fay', email = 'contact@colinfay.me', role = c('cre', 'aut'), comment = c(ORCID = '0000-0001-7343-1846'))
+Authors@R: c(
+  person('Colin', 'Fay', email = 'contact@colinfay.me', role = c('cre', 'aut'), comment = c(ORCID = '0000-0001-7343-1846')),
+  person('Eric', 'Nantz', email = 'thercast@gmail.com', role = 'ctb', comment = c(ORCID = '0000-0001-8104-7510'))
+  )
 Description: A 'NES' css for 'Shiny'.
 License: MIT + file LICENSE
 LazyData: true
