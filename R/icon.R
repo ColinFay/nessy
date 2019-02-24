@@ -12,9 +12,9 @@
 heart <- function( size = c("small", "medium", "large")){
   size <- match.arg(size)
   if (size == "small"){
-    tags$i(class="icon heart")
+    tags$i(class="nes-icon heart")
   } else {
-    tags$i(class= glue::glue("icon heart is-{size}"))
+    tags$i(class= glue::glue("nes-icon heart is-{size}"))
   }
 }
 
@@ -26,9 +26,9 @@ heart <- function( size = c("small", "medium", "large")){
 star <- function( size = c("small", "medium", "large")){
   size <- match.arg(size)
   if (size == "small"){
-    tags$i(class="icon star")
+    tags$i(class="nes-icon star")
   } else {
-    tags$i(class= glue::glue("icon star is-{size}"))
+    tags$i(class= glue::glue("nes-icon star is-{size}"))
   }
 }
 
@@ -39,9 +39,9 @@ star <- function( size = c("small", "medium", "large")){
 like <- function( size = c("small", "medium", "large")){
   size <- match.arg(size)
   if (size == "small"){
-    tags$i(class="icon like")
+    tags$i(class="nes-icon like")
   } else {
-    tags$i(class= glue::glue("icon like is-{size}"))
+    tags$i(class= glue::glue("nes-icon like is-{size}"))
   }
 }
 
@@ -52,9 +52,9 @@ like <- function( size = c("small", "medium", "large")){
 twitter <- function( size = c("small", "medium", "large")){
   size <- match.arg(size)
   if (size == "small"){
-    tags$i(class="icon twitter")
+    tags$i(class="nes-icon twitter")
   } else {
-    tags$i(class= glue::glue("icon twitter is-{size}"))
+    tags$i(class= glue::glue("nes-icon twitter is-{size}"))
   }
 }
 
@@ -65,9 +65,9 @@ twitter <- function( size = c("small", "medium", "large")){
 facebook <- function( size = c("small", "medium", "large")){
   size <- match.arg(size)
   if (size == "small"){
-    tags$i(class="icon facebook")
+    tags$i(class="nes-icon facebook")
   } else {
-    tags$i(class= glue::glue("icon facebook is-{size}"))
+    tags$i(class= glue::glue("nes-icon facebook is-{size}"))
   }
 }
 
@@ -78,9 +78,9 @@ facebook <- function( size = c("small", "medium", "large")){
 github <- function( size = c("small", "medium", "large")){
   size <- match.arg(size)
   if (size == "small"){
-    tags$i(class="icon github")
+    tags$i(class="nes-icon github")
   } else {
-    tags$i(class= glue::glue("icon github is-{size}"))
+    tags$i(class= glue::glue("nes-icon github is-{size}"))
   }
 }
 
@@ -91,9 +91,9 @@ github <- function( size = c("small", "medium", "large")){
 close <- function( size = c("small", "medium", "large")){
   size <- match.arg(size)
   if (size == "small"){
-    tags$i(class="icon close")
+    tags$i(class="nes-icon close")
   } else {
-    tags$i(class= glue::glue("icon close is-{size}"))
+    tags$i(class= glue::glue("nes-icon close is-{size}"))
   }
 }
 

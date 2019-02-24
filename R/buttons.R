@@ -20,7 +20,7 @@ make_button <- function(id, class, ...){
 button <- function(id, ...){
   make_button(
     id = id,
-    class = "btn action-button",
+    class = "nes-btn action-button",
     ...
   )
 }
@@ -30,7 +30,7 @@ button <- function(id, ...){
 button_primary <- function(id, ...){
   make_button(
     id = id,
-    class = "btn is-primary action-button",
+    class = "nes-btn is-primary action-button",
     ...
   )
 }
@@ -40,7 +40,7 @@ button_primary <- function(id, ...){
 button_success <- function(id, ...){
   make_button(
     id = id,
-    class = "btn is-success action-button",
+    class = "nes-btn is-success action-button",
     ...
   )
 }
@@ -50,7 +50,7 @@ button_success <- function(id, ...){
 button_warning <- function(id, ...){
   make_button(
     id = id,
-    class = "btn is-warning action-button",
+    class = "nes-btn is-warning action-button",
     ...
   )
 }
@@ -59,7 +59,7 @@ button_warning <- function(id, ...){
 button_error <- function(id, ...){
   make_button(
     id = id,
-    class = "btn is-error action-button",
+    class = "nes-btn is-error action-button",
     ...
   )
 }
@@ -80,7 +80,7 @@ radio_buttons <- function(id, label, choices = NULL,
   x <- radioButtons(id, label, choices, selected, inline, width, choiceNames, choiceValues)
   x$children[[2]]$children[[1]] <- lapply(
     x$children[[2]]$children[[1]], function(y){
-      y$children[[1]]$children[[1]]$attribs <- c(y$children[[1]]$children[[1]]$attribs, class="radio")
+      y$children[[1]]$children[[1]]$attribs <- c(y$children[[1]]$children[[1]]$attribs, class="nes-radio")
       y
     }
   )
