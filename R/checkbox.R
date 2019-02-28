@@ -11,7 +11,7 @@
 checkbox <- function(id, label, value = FALSE, width = NULL){
   x <- checkboxInput(id, label, value, width)
   x$children[[1]]$children[[1]]$children[[1]]$attribs <- c(
-    class="checkbox", x$children[[1]]$children[[1]]$children[[1]]$attribs
+    class="nes-checkbox", x$children[[1]]$children[[1]]$children[[1]]$attribs
   )
   x
 }

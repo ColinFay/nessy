@@ -22,7 +22,7 @@ container <- function(...,is_dark = FALSE,is_rounded){
 #'
 container_with_title <- function(title = NULL, ..., is_centered = FALSE,
                                  is_dark = FALSE, title_tag = "h2"){
-  class_ <- "container with-title"
+  class_ <- "nes-container with-title"
   if (is_centered){
     class_ <- paste(class_, "is-center")
   }
@@ -34,7 +34,7 @@ container_with_title <- function(title = NULL, ..., is_centered = FALSE,
       class = class_,
       get(title_tag)(class="title", title),
       tags$div(
-        class="containers",
+        class="nes-containers",
         if (is_dark){
           tags$p(style="color: white;", ...)
         } else {
@@ -52,7 +52,7 @@ container_with_title <- function(title = NULL, ..., is_centered = FALSE,
 
 container_simple <- function(..., is_centered = FALSE,
                              is_dark = FALSE,is_rounded = FALSE){
-  class_ <- "container"
+  class_ <- "nes-container"
   if (is_centered){
     class_ <- paste(class_, "is-center")
   }
@@ -66,7 +66,7 @@ container_simple <- function(..., is_centered = FALSE,
     tags$section(
       class = class_,
       tags$div(
-        class="containers",
+        class="nes-containers",
         if (is_dark){
           tags$p(style="color: white;", ...)
         } else {

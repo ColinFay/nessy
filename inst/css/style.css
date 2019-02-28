@@ -7,7 +7,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.container:not(:last-child) {
+.nes-container:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -15,30 +15,30 @@ i.brand {
   margin-right: 1rem;
 }
 
-div.containers > .container {
+div.nes-containers > .nes-container {
   display: inline-block;
   max-width: 400px;
 }
 
-.balloon.container .balloon {
+.nes-balloon.container .nes-balloon {
   max-width: 600px;
   margin: 2rem 2rem;
 }
 
-.balloon.container .messages {
+.nes-balloon.container .messages {
   display: flex;
   flex-direction: column;
 }
-.balloon.container .message {
+.nes-balloon.container .message {
   display: flex;
 }
-.balloon.container .message i {
+.nes-balloon.container .message i {
   align-self: flex-end;
 }
-.balloon.container .message.-left {
+.nes-balloon.container .message.-left {
   align-self: flex-start;
 }
-.balloon.container .message.-right {
+.nes-balloon.container .message.-right {
   align-self: flex-end;
 }
 

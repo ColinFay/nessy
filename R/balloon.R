@@ -13,7 +13,7 @@
 
 balloon_container <- function(title, ..., title_tag = "h2"){
   x <- container_with_title(title = title, ..., title_tag = title_tag)
-  x[[1]]$attribs$class <- paste("balloon", x[[1]]$attribs$class )
+  x[[1]]$attribs$class <- paste("nes-balloon", x[[1]]$attribs$class )
   x
 }
 
@@ -23,7 +23,7 @@ balloon_container <- function(title, ..., title_tag = "h2"){
 balloon <- function(..., side = c("left", "right")){
   side <- match.arg(side)
   tags$div(
-    class = glue("balloon from-{side}"),
+    class = glue("nes-balloon from-{side}"),
     ...
     )
 }

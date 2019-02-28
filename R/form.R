@@ -16,14 +16,14 @@ text_input <- function(id, label, value = "", width = NULL,
                        placeholder = NULL, inline = FALSE){
   type <- match.arg(type)
   if (inline){
-    class_ <- "field is-inline"
+    class_ <- "nes-field is-inline"
   } else {
-    class_ <- "field"
+    class_ <- "nes-field"
   }
   if (type != "none"){
-    type_ <- glue("input is-{type}")
+    type_ <- glue("nes-input is-{type}")
   } else {
-    type_ <- "input"
+    type_ <- "nes-input"
   }
   x <- textInput(inputId = id,
                  label = label, value = value,

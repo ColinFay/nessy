@@ -18,7 +18,8 @@ cartridge <- function(title = NULL, subtitle = NULL,..., footer = NULL){
         tags$meta(name="viewport", content="width=device-width, initial-scale=1.0"),
         tags$meta("http-equiv"="X-UA-Compatible",content="ie=edge"),
         includeCSS(system.file("css/ness.css", package = "nessy")),
-        includeCSS(system.file("css/style.css", package = "nessy")),
+        includeCSS(system.file("css/nes.css", package = "nessy")),
+        #includeCSS(system.file("css/style.css", package = "nessy")),
         tags$style("body{padding:2em}")
       ),
       tags$body(
